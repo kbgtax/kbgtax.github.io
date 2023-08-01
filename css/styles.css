@@ -8445,6 +8445,10 @@ fieldset:disabled .btn {
   padding-bottom: 4rem !important;
 }
 
+.py-5-mod {
+  padding-top: 3rem !important;
+  padding-bottom: 1rem !important;
+}
 .pt-0 {
   padding-top: 0 !important;
 }
@@ -12402,6 +12406,12 @@ fieldset:disabled .btn {
 
 .nanumGothic {
   font-family: 'Nanum Gothic', serif;
+  /* font-weight: 1500; */
+  letter-spacing: -1px;
+}
+
+.nanumMyungjo {
+  font-family: 'Nanum Myeongjo', serif;
   /* font-weight: 1500; */
   letter-spacing: -1px;
 }
