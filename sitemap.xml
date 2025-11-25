@@ -1,43 +1,50 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>https://kbgtax.github.io/</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/index.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/area.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/bg.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/to.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/gallary.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/blog/post1.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://kbgtax.github.io/blog/post2.html</loc>
-<lastmod>2025-02-18T11:05:29+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>{{ site.url }}/</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/area.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/bg.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/to.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/blog.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>{{ site.url }}/gallary.html</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  {% for post in site.posts %}
+  <url>
+    <loc>{{ post.url | absolute_url }}</loc>
+    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  {% endfor %}
 </urlset>
