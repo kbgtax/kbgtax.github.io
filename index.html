@@ -3,23 +3,24 @@ layout: default
 title: Home
 ---
 
-<!-- Header - set the background image for the header in the line below-->
+<!-- Hero Section -->
 <header class="bg-image-full"
-    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); background-position: center; height: 60vh; min-height: 400px;">
-    <div class="d-flex align-items-center justify-content-center h-100 container text-center">
-        <div class="bg-dark-overlay p-5 rounded">
-            <h1 class="text-white fw-bolder mb-2 shadowText nanumMyeongjo display-4">지축대표세무사<br>김병규 세무회계</h1>
-            <p class="text-white-50 fs-4 mb-0 nanumGothic">BG Tax & Accounting</p>
+    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); min-height: 450px;">
+    <div class="d-flex align-items-center justify-content-center h-100 py-5">
+        <div class="hero-text-box shadowText">
+            <h1>지축대표세무사<br>김병규 세무회계</h1>
+            <p>BG Tax & Accounting</p>
         </div>
     </div>
 </header>
-<!-- Content section-->
-<section class="py-5 container">
-    <div class="text-center mb-5">
-        <h3 class="mb-3 biggest_important_research nanumMyeongjo text-primary-custom">반갑습니다!</h3>
-        <p class="explanation_bold_important_nanumGothic fs-5">여러분들의 소중한 재산을 지켜 드리겠습니다!</p>
-        <div class="divider-custom mx-auto my-4"></div>
-        <div class="explanation_important_nanumGothic lead text-muted">
+
+<!-- Welcome Section -->
+<section class="py-5 bg-white">
+    <div class="container text-center">
+        <h2 class="mb-4">반갑습니다!</h2>
+        <p class="lead fw-bold mb-3">여러분들의 소중한 재산을 지켜 드리겠습니다!</p>
+        <div class="divider-custom mx-auto mb-4"></div>
+        <div class="lead text-muted">
             안녕하세요, 김병규 세무회계 대표 세무사 김병규입니다.<br>
             <span class="fw-bold text-dark">30년 이상의 풍부한 세무공무원 경력</span>을 바탕으로<br>
             (국립세무대학 졸, 동고양 세무서 조사과장, 고양세무서 부가가치세 과장 등)<br>
@@ -28,69 +29,48 @@ title: Home
     </div>
 </section>
 
+<!-- Blog Section -->
 <section class="py-5 bg-light">
     <div class="container">
-        <h3 class="mb-5 text-center biggest_important_research nanumMyeongjo text-primary-custom">최근 블로그 글</h3>
-        <div class="row">
+        <h2 class="text-center mb-5">최근 블로그글</h2>
+        <div class="row g-4">
             {% for post in site.posts limit:2 %}
-            <div class="col-md-6 mb-4">
-                <div class="card h-100 shadow-sm border-0 hover-lift">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
                     <div class="card-body p-4">
-                        <div class="mb-2 text-muted small">{{ post.date | date: "%Y-%m-%d" }}</div>
-                        <h5 class="card-title mb-3">
-                            <a href="{{ post.url | relative_url }}"
-                                class="text-decoration-none text-dark fw-bold nanumMyeongjo fs-4">{{ post.title }}</a>
+                        <small class="text-muted">{{ post.date | date: "%Y-%m-%d" }}</small>
+                        <h5 class="card-title my-3">
+                            <a href="{{ post.url | relative_url }}" class="text-dark text-decoration-none fw-bold">{{
+                                post.title }}</a>
                         </h5>
-                        <p class="card-text text-muted mb-4 nanumGothic">{{ post.excerpt | strip_html | truncate: 100 }}
-                        </p>
-                        <a href="{{ post.url | relative_url }}"
-                            class="btn btn-outline-primary-custom stretched-link">자세히 읽어보기</a>
+                        <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                        <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary-custom btn-sm">자세히 보기</a>
                     </div>
                 </div>
             </div>
             {% endfor %}
         </div>
-        <div class="text-center mt-4">
-            <a href="#" class="btn btn-primary-custom px-4 py-2">블로그 더보기</a>
-        </div>
     </div>
 </section>
 
-<section class="py-5 container">
-    <h3 class="mb-5 text-center biggest_important_research nanumMyeongjo text-primary-custom">사무실 최근 소식</h3>
-    <div class="row g-4">
-        <div class="col-md-6">
-            <div class="card border-0 shadow-sm h-100">
-                <img class="card-img-top" style="height:300px; object-fit: cover;"
-                    src="{{ '/assets/img/group_pic1.jpg' | relative_url }}" alt="Travel">
-                <div class="card-body p-4">
-                    <h5 class="card-title fw-bold nanumMyeongjo">창립 1주년 기념 미국 서부 여행 [2023년 7월]</h5>
-                    <p class="card-text text-muted mt-3">
-                        여러분들의 성원 덕분에 저희 사무실은 개업 이후 빠르게 발전하였으며, 최근 1년간 놀라운 성장을 이루어냈습니다.
-                        앞으로도 더욱 빠른 성장과 더 나은 서비스를 위해, 미국 서부의 환상적인 자연 속에서 새로운 도약을 기원하였습니다.
-                    </p>
-                    <ul class="list-unstyled text-muted small mt-3">
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>요세미티 국립공원</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>피나클 국립공원</li>
-                        <li><i class="bi bi-check-circle-fill text-success me-2"></i>실리콘밸리</li>
-                    </ul>
+<!-- News Section -->
+<section class="py-5 bg-white">
+    <div class="container">
+        <h2 class="text-center mb-5">사무실 최근 소식</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">📢 2025년 세법 개정안 설명회</h5>
+                        <p class="card-text">2025년 1월부터 적용되는 새로운 세법 개정 사항에 대한 무료 설명회를 진행합니다.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="card border-0 shadow-sm h-100">
-                <img class="card-img-top" style="height:300px; object-fit: cover;"
-                    src="{{ '/assets/img/ganpan.jpg' | relative_url }}" alt="Office">
-                <div class="card-body p-4">
-                    <h5 class="card-title fw-bold nanumMyeongjo">김병규 세무회계 개업 [2022년 8월]</h5>
-                    <p class="card-text text-muted mt-3">
-                        많은 분들의 축복 속에 저희 사무실이 성공적으로 지축역 근처에 개업했습니다.
-                    </p>
-                    <div class="mt-3">
-                        <span class="badge bg-light text-dark border me-1 mb-1">기장 대리</span>
-                        <span class="badge bg-light text-dark border me-1 mb-1">신고 대리</span>
-                        <span class="badge bg-light text-dark border me-1 mb-1">불복 청구</span>
-                        <span class="badge bg-light text-dark border me-1 mb-1">양도/상속/증여</span>
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">✨ 신규 고객 무료 상담</h5>
+                        <p class="card-text">처음 방문하시는 고객님들께 30분 무료 세무 상담을 제공하고 있습니다. 전화 예약 후 방문해주세요.</p>
                     </div>
                 </div>
             </div>
