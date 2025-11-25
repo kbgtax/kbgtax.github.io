@@ -3,13 +3,10 @@ layout: default
 title: 블로그
 ---
 
-<header class="bg-image-full"
-    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); min-height: 300px;">
-    <div class="d-flex align-items-center justify-content-center h-100">
-        <div class="hero-text-box shadowText">
-            <h1>블로그</h1>
-            <p>Blog Posts</p>
-        </div>
+<header class="bg-image-full" style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}');">
+    <div class="hero-text-box shadowText">
+        <h1>블로그</h1>
+        <p>Blog Posts</p>
     </div>
 </header>
 
@@ -18,14 +15,17 @@ title: 블로그
         <div class="row g-4">
             {% for post in site.posts %}
             <div class="col-md-6">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body p-4">
-                        <small class="text-muted">{{ post.date | date: "%Y년 %m월 %d일" }}</small>
-                        <h3 class="card-title my-3">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-body p-5">
+                        <div class="d-flex align-items-center mb-3">
+                            <span class="badge bg-primary-custom me-2">📰</span>
+                            <small class="text-muted">{{ post.date | date: "%Y년 %m월 %d일" }}</small>
+                        </div>
+                        <h3 class="card-title mb-3">
                             <a href="{{ post.url | relative_url }}" class="text-dark text-decoration-none">{{ post.title
                                 }}</a>
                         </h3>
-                        <p class="card-text text-muted">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+                        <p class="card-text text-muted mb-4">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
                         <a href="{{ post.url | relative_url }}" class="btn btn-outline-primary-custom">자세히 보기 →</a>
                     </div>
                 </div>
@@ -35,6 +35,7 @@ title: 블로그
 
         {% if site.posts.size == 0 %}
         <div class="text-center py-5">
+            <div class="mb-4" style="font-size: 4rem;">📝</div>
             <p class="lead text-muted">아직 작성된 블로그 글이 없습니다.</p>
         </div>
         {% endif %}

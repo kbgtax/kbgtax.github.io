@@ -46,7 +46,7 @@ h5 {
     font-size: 1.25rem;
 }
 
-/* Navbar - THINNER */
+/* Navbar */
 .navbar {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
     padding: 0.4rem 0;
@@ -82,27 +82,35 @@ h5 {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* Single background box for all hero text */
 .hero-text-box {
-    background-color: rgba(0, 0, 0, 0.65);
-    padding: 2rem 3rem;
-    border-radius: 12px;
-    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2.5rem 5rem;
+    border-radius: 16px;
     text-align: center;
 }
 
 .hero-text-box h1 {
     color: white;
-    margin-bottom: 0.75rem;
-    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+    line-height: 1.3;
+    white-space: nowrap;
 }
 
 .hero-text-box p {
-    color: white;
+    color: rgba(255, 255, 255, 0.95);
     margin-bottom: 0;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .shadowText {
@@ -112,20 +120,34 @@ h5 {
 /* Cards */
 .card {
     border: none;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    overflow: hidden;
 }
 
 .card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15) !important;
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2) !important;
+}
+
+.card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
 }
 
 /* Buttons */
 .btn {
     font-weight: 600;
-    border-radius: 8px;
-    padding: 0.625rem 1.5rem;
+    border-radius: 10px;
+    padding: 0.75rem 2rem;
+    transition: all 0.3s ease;
+    font-size: 1rem;
 }
 
 .btn-primary-custom {
@@ -137,6 +159,8 @@ h5 {
 .btn-primary-custom:hover {
     background-color: #143620;
     border-color: #143620;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 71, 42, 0.3);
 }
 
 .btn-outline-primary-custom {
@@ -148,6 +172,8 @@ h5 {
 .btn-outline-primary-custom:hover {
     background-color: var(--primary-green);
     color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 71, 42, 0.2);
 }
 
 /* Utilities */
@@ -156,20 +182,20 @@ h5 {
 }
 
 .divider-custom {
-    width: 80px;
-    height: 4px;
+    width: 100px;
+    height: 5px;
     background: linear-gradient(90deg, var(--primary-green), var(--gold));
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .lead {
-    font-size: 1.15rem;
+    font-size: 1.2rem;
     line-height: 1.8;
 }
 
 /* Images */
 .img-fluid {
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 /* Footer */
@@ -177,20 +203,37 @@ footer {
     margin-top: auto;
 }
 
+footer h5 {
+    color: white !important;
+}
+
 footer .badge {
     font-weight: 500;
-    padding: 0.5em 0.75em;
-    font-size: 0.85rem;
+    padding: 0.6em 0.85em;
+    font-size: 0.9rem;
+    border-radius: 8px;
 }
 
 /* Section spacing */
 section {
-    padding: 4rem 0;
+    padding: 5rem 0;
+}
+
+/* Section Headers */
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+section h3 {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 /* List styling */
 ul li {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 ul li strong {
@@ -199,24 +242,52 @@ ul li strong {
 
 /* Blog Post Content Styling */
 .post-content {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     line-height: 1.9;
-    max-width: 800px;
+    max-width: 850px;
     margin: 0 auto;
 }
 
 .post-content h4 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    padding-top: 1rem;
-    border-top: 2px solid var(--light-bg);
+    margin-top: 2.5rem;
+    margin-bottom: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 3px solid var(--light-bg);
+    font-size: 1.75rem;
 }
 
 .post-content p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
 }
 
 .post-content ul {
-    margin-bottom: 1.5rem;
-    padding-left: 2rem;
+    margin-bottom: 1.75rem;
+    padding-left: 2.5rem;
+}
+
+/* Contact Cards */
+.card.text-center h5 {
+    color: var(--primary-green);
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-text-box h1 {
+        font-size: 2rem;
+        white-space: normal;
+    }
+
+    .hero-text-box p {
+        font-size: 1rem;
+    }
+
+    .hero-text-box {
+        padding: 2rem 2.5rem;
+    }
+
+    section {
+        padding: 3rem 0;
+    }
 }

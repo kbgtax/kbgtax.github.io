@@ -2,13 +2,10 @@
 layout: default
 ---
 
-<header class="bg-image-full"
-    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); min-height: 300px;">
-    <div class="d-flex align-items-center justify-content-center h-100">
-        <div class="hero-text-box shadowText">
-            <h1>{{ page.title }}</h1>
-            <p>{{ page.date | date: "%Y년 %m월 %d일" }}</p>
-        </div>
+<header class="bg-image-full" style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}');">
+    <div class="hero-text-box shadowText">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.date | date: "%Y년 %m월 %d일" }}</p>
     </div>
 </header>
 
@@ -16,7 +13,8 @@ layout: default
     <div class="container py-5">
         <div class="post-content">
             {% if page.image %}
-            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid mb-4 shadow-sm">
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
+                class="img-fluid mb-5 shadow-lg rounded-4">
             {% endif %}
 
             {{ content }}
@@ -24,7 +22,8 @@ layout: default
             <hr class="my-5">
 
             <div class="text-center">
-                <a href="{{ '/blog.html' | relative_url }}" class="btn btn-outline-primary-custom">← 블로그 목록으로 돌아가기</a>
+                <a href="{{ '/blog.html' | relative_url }}" class="btn btn-outline-primary-custom btn-lg">← 블로그 목록으로
+                    돌아가기</a>
             </div>
         </div>
     </div>
