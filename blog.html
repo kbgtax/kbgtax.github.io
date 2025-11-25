@@ -1,0 +1,35 @@
+---
+layout: default
+title: 블로그
+---
+
+<header class="bg-image-full"
+    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); background-position: center; height: 160px;">
+    <div class="d-flex align-items-end justify-content-start h-100 container ">
+        <h1 class="text-white fw-bolder mb-4 shadowText nanumGothic">블로그 [지축대표세무사 - 김병규 세무회계]
+        </h1>
+    </div>
+</header>
+
+<section class="py-5 container">
+    <div class="row">
+        {% for post in site.posts %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title h4">
+                        <a href="{{ post.url | relative_url }}"
+                            class="explanation_bold_important_nanumGothic text-decoration-none text-dark">{{ post.title
+                            }}</a>
+                    </h2>
+                    <p class="card-text text-muted small">{{ post.date | date: "%Y-%m-%d" }}</p>
+                    <p class="card-text">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
+                </div>
+                <div class="card-footer bg-transparent border-top-0">
+                    <a href="{{ post.url | relative_url }}" class="btn btn-outline-success btn-sm">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

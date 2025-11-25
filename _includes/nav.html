@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-green">
+    <div class="container roboto bigger_slight">
+        <a class="navbar-brand roboto_bold bigger_slight nanumGothic" href="{{ '/' | relative_url }}">지축대표세무사 - 김병규
+            세무회계</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto nanumGothic mb-2 mb-lg-0">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-green">
+                    <div class="container roboto bigger_slight">
+                        <a class="navbar-brand roboto_bold bigger_slight nanumGothic"
+                            href="{{ '/' | relative_url }}">지축대표세무사 - 김병규
+                            세무회계</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto nanumGothic mb-2 mb-lg-0">
+                                <li class="nav-item"><a class="nav-link {% if page.url == '/' %}active{% endif %}"
+                                        aria-current="page" href="{{ '/' | relative_url }}">Home</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link {% if page.url == '/area.html' %}active{% endif %}"
+                                        aria-current="page" href="{{ '/area.html' | relative_url }}">주요 업무</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link {% if page.url == '/bg.html' %}active{% endif %}"
+                                        aria-current="page" href="{{ '/bg.html' | relative_url }}">김병규 세무사</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link {% if page.url == '/blog.html' %}active{% endif %}"
+                                        href="{{ '/blog.html' | relative_url }}">블로그</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link {% if page.url == '/to.html' %}active{% endif %}"
+                                        aria-current="page" href="{{ '/to.html' | relative_url }}">오시는 길</a></li>
+                                <li class="nav-item"><a
+                                        class="nav-link {% if page.url == '/gallary.html' %}active{% endif %}"
+                                        aria-current="page" href="{{ '/gallary.html' | relative_url }}">갤러리</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>

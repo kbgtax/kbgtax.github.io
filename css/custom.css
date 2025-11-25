@@ -1,0 +1,107 @@
+:root {
+    --primary-color: #1a472a; /* Deep Forest Green */
+    --secondary-color: #d4af37; /* Gold */
+    --accent-color: #e5e5e5;
+    --text-dark: #333333;
+    --text-light: #ffffff;
+    --font-heading: 'Nanum Myeongjo', serif;
+    --font-body: 'Nanum Gothic', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+/* Custom Colors */
+.text-primary-custom {
+    color: var(--primary-color) !important;
+}
+
+.bg-green {
+    background-color: var(--primary-color) !important;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: #143620;
+    border-color: #143620;
+    transform: translateY(-2px);
+}
+
+.btn-outline-primary-custom {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn-outline-primary-custom:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+/* Hero Section */
+.bg-image-full {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg-dark-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+}
+
+.shadowText {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hover-lift:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Typography Utilities */
+.nanumMyeongjo {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.nanumGothic {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.divider-custom {
+    width: 50px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.img-fluid_footer {
+    filter: brightness(0) invert(1); /* Make logo white if it's black */
+    opacity: 0.9;
+}

@@ -1,0 +1,21 @@
+title: "지축대표세무사 - 김병규 세무회계"
+email: kbgycn63@naver.com
+description: >- # this means to ignore newlines until "baseurl:"
+  국립세무대학 출신 30년 경력의 지축대표세무사 김병규 세무회계. 법인, 양도, 상속, 증여 등 모든 국세 전문.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  kbgtax
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
