@@ -1,17 +1,38 @@
 title: "지축대표세무사 - 김병규 세무회계"
 email: kbgycn63@naver.com
 description: >- # this means to ignore newlines until "baseurl:"
-  국립세무대학 출신 30년 경력의 지축대표세무사 김병규 세무회계. 법인, 양도, 상속, 증여 등 모든 국세 전문.
+  국립세무대학 출신 30년 경력의 지축대표세무사 김병규 세무회계. 법인, 양도, 상속, 증여 등 모든 국세 전문. 고양시 덕양구 삼송동 위치.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  kbgtax
+url: "https://kbgtax.github.io" # the base hostname & protocol for your site
+twitter_username: 
+github_username: kbgtax
+
+# SEO 관련 설정
+lang: ko-KR
+author: 김병규 세무사
+locale: ko_KR
+logo: /assets/img/logo.png
+social:
+  name: 김병규 세무회계
+  links:
+    - https://kbgtax.github.io
+
+# 네이버/다음 검색엔진 설정
+naver_site_verification: "623e58be41824ee1ecc2d3341b265b35"
+google_site_verification: "f69e3ef6e4c46b68"
 
 # Build settings
 markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Feed 설정 (jekyll-feed)
+feed:
+  posts_limit: 20
+  excerpt_only: false
 
 defaults:
   - scope:
@@ -19,3 +40,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      author: "김병규 세무사"
