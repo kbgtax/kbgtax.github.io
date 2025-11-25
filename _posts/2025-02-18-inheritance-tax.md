@@ -53,3 +53,12 @@ excerpt: "2025년 세법 개정 내용을 반영한 상속 및 증여세 절세 
     상속 및 증여세 절세는 단기간에 이루어지는 것이 아니라, 장기적인 계획과 꾸준한 관리가 필요합니다.
     김병규 세무회계는 고객 여러분의 성공적인 자산 이전을 위해 최선을 다하겠습니다.
 </p>
+
+<div class="alert bg-light border-start border-5 border-success p-4 my-5">
+    <h5 class="fw-bold mb-3">📞 상담 안내</h5>
+    <p class="mb-0">
+        상속세·증여세 관련 상담을 원하시면 아래 연락처로 문의해 주세요.<br>
+        <strong>전화:</strong> 02-381-1355<br>
+        <strong>이메일:</strong> kbgycn63@naver.com
+    </p>
+</div>

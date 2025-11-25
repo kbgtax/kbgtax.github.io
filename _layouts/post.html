@@ -1,20 +1,30 @@
 ---
 layout: default
 ---
-<header class="bg-image-full"
-    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); background-position: center; height: 160px;">
-    <div class="d-flex align-items-end justify-content-start h-100 container ">
-        <h1 class="text-white fw-bolder mb-4 shadowText nanumGothic">지축대표세무사 - 김병규 세무회계 <br>(BG Tax & Accounting)
-        </h1>
+
+<header class="bg-image-full" style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}');">
+    <div class="hero-text-box shadowText">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.date | date: "%Y년 %m월 %d일" }}</p>
     </div>
 </header>
 
-<main class="container py-5 explanation_important_nanumGothic ">
-    <h1 class="biggest_important_research nanumGothic">{{ page.title }}</h1>
-    <p class="text-muted">Published on {{ page.date | date: "%Y-%m-%d" }}</p>
-    {% if page.image %}
-    <img src="{{ page.image | relative_url }}" alt="{{ page.title }}" class="img-fluid_small mb-3">
-    {% endif %}
+<article class="bg-white">
+    <div class="container py-5">
+        <div class="post-content">
+            {% if page.image %}
+            <img src="{{ page.image | relative_url }}" alt="{{ page.title }}"
+                class="img-fluid mb-5 shadow-lg rounded-4">
+            {% endif %}
 
-    {{ content }}
-</main>
+            {{ content }}
+
+            <hr class="my-5">
+
+            <div class="text-center">
+                <a href="{{ '/blog.html' | relative_url }}" class="btn btn-outline-primary-custom btn-lg">← 블로그 목록으로
+                    돌아가기</a>
+            </div>
+        </div>
+    </div>
+</article>

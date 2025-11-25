@@ -9,7 +9,7 @@ github_username:  kbgtax
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 

@@ -3,64 +3,60 @@ layout: default
 title: 갤러리
 ---
 
-<header class="bg-image-full"
-    style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}'); background-position: center; height: 160px;">
-    <div class="d-flex align-items-end justify-content-start h-100 container ">
-        <h1 class="text-white fw-bolder mb-4 shadowText nanumGothic">갤러리 [지축대표세무사 - 김병규 세무회계]
-        </h1>
+<header class="bg-image-full" style="background-image: url('{{ '/assets/img/main.jpg' | relative_url }}');">
+    <div class="hero-text-box shadowText">
+        <h1>갤러리</h1>
+        <p>Gallery</p>
     </div>
 </header>
-<!-- Content section-->
-<section class="py-5-mod container">
-    <div class="d-flex flex-column flex-md-row
-    justify-content-between mb-1">
 
-
-
-        <div class="flex-grow-1 col-md-6  mb-5" style="margin-left: 10px; margin-right: 10px;">
-            <img class="img-fluid mx-1 mb-2 " style="height:300px; object-fit: cover;"
-                src="{{ '/assets/img/fireworks.jpg' | relative_url }}" />
-            <div>
-                <div class="bigger_important nanumGothic">실리콘밸리 구글 본사 근처 불꽃놀이 관람</div>
-                <div class="explanation_important nanumGothic">2023년 미국 독립 기념일에 San Francisco Symphony의 열정적인 공연과,</div>
-                <div class="explanation_important nanumGothic">그후에 이어지는 환상적인 불꽃놀이를 관람하였습니다.</div>
-
+<section class="bg-white">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 overflow-hidden">
+                    <img class="card-img-top" src="{{ '/assets/img/fireworks.jpg' | relative_url }}" alt="불꽃놀이"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">🎆 실리콘밸리 구글 본사 근처 불꽃놀이 관람</h5>
+                        <p class="card-text">2023년 미국 독립 기념일에 San Francisco Symphony의 열정적인 공연과, 그후에 이어지는 환상적인 불꽃놀이를
+                            관람하였습니다.</p>
+                    </div>
+                </div>
             </div>
-        </div>
 
-        <div class="flex-grow-1 col-md-6  mb-5" style="margin-left: 10px; margin-right: 10px;">
-            <img class="img-fluid mx-1 mb-2" style="height:300px; object-fit: cover;"
-                src="{{ '/assets/img/tunnelview.jpg' | relative_url }}" />
-            <div>
-                <div class="bigger_important nanumGothic ">요세미티 국립공원 Tunnel View</div>
-                <div class="explanation_important nanumGothic">Half Dome, El Capitan, 면사포 폭포 등이 한눈에 보이는 요세미티 사진 맛집입니다.
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 overflow-hidden">
+                    <img class="card-img-top" src="{{ '/assets/img/tunnelview.jpg' | relative_url }}" alt="요세미티"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">🏔️ 요세미티 국립공원 Tunnel View</h5>
+                        <p class="card-text">Half Dome, El Capitan, 면사포 폭포 등이 한눈에 보이는 요세미티 사진 맛집입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 overflow-hidden">
+                    <img class="card-img-top" src="{{ '/assets/img/main.jpg' | relative_url }}" alt="Half Dome"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">⛰️ 요세미티 국립공원 Half Dome</h5>
+                        <p class="card-text">개업 1주년 기념으로 미국 서부 여행 중 찍은 사진입니다.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow-sm border-0 overflow-hidden">
+                    <img class="card-img-top" src="{{ '/assets/img/Office.jpg' | relative_url }}" alt="사무실 내부"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="card-body p-4">
+                        <h5 class="card-title">🏢 사무실 내부</h5>
+                        <p class="card-text">고양시 덕양구 지축1로 73 505호에 위치한 사무실 내부 사진입니다. 지축역에서 걸어서 단 2분 거리입니다.</p>
+                    </div>
                 </div>
             </div>
         </div>
-</section>
-
-<section class="py-1 container">
-    <div class="d-flex flex-column flex-md-row
-    justify-content-between mb-1">
-
-
-
-        <div class="flex-grow-1 col-md-6  mb-5" style="margin-left: 10px; margin-right: 10px;">
-            <img class="img-fluid mx-1 mb-2 " style="height:300px; object-fit: cover;"
-                src="{{ '/assets/img/main.jpg' | relative_url }}" />
-            <div>
-                <div class="bigger_important nanumGothic">요세미티 국립공원 Half Dome</div>
-                <div class="explanation_important nanumGothic">개업 1주년 기념으로 미국 서부 여행 중 찍은 사진입니다.</div>
-            </div>
-        </div>
-
-        <div class="flex-grow-1 col-md-6  mb-5" style="margin-left: 10px; margin-right: 10px;">
-            <img class="img-fluid mx-1 mb-2" style="height:300px; object-fit: cover;"
-                src="{{ '/assets/img/Office.jpg' | relative_url }}" />
-            <div>
-                <div class="bigger_important nanumGothic ">사무실 내부</div>
-                <div class="explanation_important nanumGothic">고양시 덕양구 지축1로 73 505호에 위치한 사무실 내부 사진입니다.</div>
-                <div class="explanation_important nanumGothic">지축역에서 걸어서 단 2분 거리입니다.</div>
-            </div>
-        </div>
+    </div>
 </section>
