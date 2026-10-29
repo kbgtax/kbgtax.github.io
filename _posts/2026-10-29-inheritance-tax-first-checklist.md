@@ -3,6 +3,8 @@ layout: post
 title: "상속세 상담 전, 가족이 먼저 확인하면 좋은 다섯 가지"
 date: 2026-10-29
 excerpt: "상속재산을 어디서 확인하고 어떤 자료부터 모아야 할까요? 국세청 안내를 바탕으로 상담 전 준비 순서를 정리했습니다."
+image: /assets/img/posts/inheritance-consultation-five-steps.png
+image_alt: "상속세 상담 전 확인할 다섯 단계: 가족관계, 상속재산 조회, 채무·지출 증빙, 부동산 평가자료, 상담 질문 메모"
 author: "김병규 세무회계 편집팀"
 ---
 
@@ -30,14 +32,24 @@ author: "김병규 세무회계 편집팀"
 
 ## 5. 상담 때는 ‘모르는 것’도 적어 오세요
 
-아래 항목을 한 장에 정리하면 첫 상담이 수월해집니다.
-
-- 상속개시일, 상속인 관계, 해외 거주 상속인 유무
-- 알고 있는 부동산·금융재산과 아직 조회 중인 재산
-- 대출, 임대차보증금 등 채무와 장례비용 관련 증빙
-- 생전에 가족에게 이전한 재산이 있는지
-- 이미 처리한 행정 절차와 아직 확인하지 못한 사항
+<div class="alert bg-light border-start border-5 border-warning p-4 my-4" role="note">
+  <p class="fw-bold mb-3">첫 상담 전에 확인해 보세요</p>
+  <ul class="mb-0">
+    <li><strong>가족관계와 날짜:</strong> 상속개시일, 상속인 관계, 해외 거주 상속인 유무를 적어 둡니다.</li>
+    <li><strong>재산 조회:</strong> 알고 있는 부동산·금융재산과 아직 조회 중인 재산을 나눠 적습니다.</li>
+    <li><strong>채무와 지출:</strong> 대출·임대차보증금 자료, 공과금·장례비용 관련 증빙을 모읍니다.</li>
+    <li><strong>생전 이전:</strong> 고인이 가족에게 이전한 재산이 있다면 시기와 자료를 확인합니다.</li>
+    <li><strong>남은 질문:</strong> 이미 처리한 절차와 아직 모르는 사항을 따로 적어 둡니다.</li>
+  </ul>
+</div>
 
 자료가 부족하더라도 신고기한 검토는 미루지 마세요. 이 글은 상담 준비를 돕기 위한 일반 정보이며, 실제 신고 대상·평가액·공제 가능 여부는 상속 관계와 증빙에 따라 달라집니다.
+
+<div class="alert bg-light border-start border-5 border-success p-4 my-5" role="note">
+  <h3 class="h5 fw-bold mb-3">상담 안내</h3>
+  <p class="mb-2">상속재산 목록이나 신고기한이 궁금하다면 자료를 준비해 문의해 주세요.</p>
+  <p class="mb-0"><strong>전화:</strong> <a href="tel:023811355">02-381-1355</a><br>
+  <strong>이메일:</strong> <a href="mailto:kbgycn63@naver.com">kbgycn63@naver.com</a></p>
+</div>
 
 **자료 확인:** 국세청 상속세 안내 페이지(위 링크), 2026년 10월 29일. 본문은 공개 자료를 토대로 편집팀이 작성한 안내이며, 개별 세무 검토 의견을 대신하지 않습니다.
